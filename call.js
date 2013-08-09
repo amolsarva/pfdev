@@ -1,4 +1,5 @@
         // note that num must be obtained
+        var URL_LINX_AUTH="http://payfone.snkpk.com/test/php2js/linxauth.php?";
         var link = "msisdn="+num;
         var sendURL=URL_LINX_AUTH+link;
         $.ajax({

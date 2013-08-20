@@ -1,0 +1,97 @@
+.photoframe {
+    float: left;
+    padding: 5px 5px;
+	margin:0px 5px 5px 0px;
+	border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.photoframeamex {
+	float: left;
+	display:block;
+	margin:0px 30px 30px 0px;
+    width:180px;
+	height:168px;
+	background: url("../img/investorlogo_amex2.gif") no-repeat scroll left top transparent;
+	border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.photoframeamex:hover {
+	background-position: 0 -168px;
+}
+
+.photoframerelay {
+	float: left;
+	display:block;
+	margin:0px 30px 30px 0px;
+    background: url("../img/investorlogo_relay.gif") no-repeat scroll left top transparent;
+    width:180px;
+	height:168px;
+	border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.photoframerelay:hover {
+	background-position: 0 -168px;
+}
+
+.photoframeopus {
+	float: left;
+	display:block;
+	margin:0px 30px 30px 0px;
+    background: url("../img/investorlogo_opus2.gif") no-repeat scroll left top transparent;
+    width:180px;
+	height:168px;
+	border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.photoframeopus:hover {
+	background-position: 0 -168px;
+}
+
+.photoframerogers {
+	float: left;
+	display:block;
+	margin:0px 30px 30px 0px;
+    background: url("../img/investorlogo_rogers2.gif") no-repeat scroll left top transparent;
+    width:180px;
+	height:168px;
+	border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.photoframerogers:hover {
+	background-position: 0 -168px;
+}
+
+.photoframerre {
+	float: left;
+	display:block;
+	margin:0px 30px 30px 0px;
+    background: url("../img/investorlogo_rre2.gif") no-repeat scroll left top transparent;
+    width:180px;
+	height:168px;
+	border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.photoframerre:hover {
+	background-position: 0 -168px;
+}
+
+.photoframeverizon {
+	float: left;
+	display:block;
+	margin:0px 30px 30px 0px;
+    background: url("../img/investorlogo_verizon2.gif") no-repeat scroll left top transparent;
+    width:180px;
+	height:168px;
+	border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.photoframeverizon:hover {
+	background-position: 0 -168px;
+}

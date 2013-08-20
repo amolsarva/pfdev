@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Payfone Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-responsive.css" />
+    <link rel="stylesheet" media="only screen and (min-width: 641px)" href="assets/css/custom.css" />
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 640px)" href="assets/css/custom2.css" />
+    <link rel="stylesheet" media="only screen and (min-width: 381px) and (max-width: 480px)" href="assets/css/custom3.css" />
+    <link rel="stylesheet" media="only screen and (max-width: 380px)" href="assets/css/custom4.css" />
+    <link rel="stylesheet" href="/assets/js/styles/zenburn.css">
+    <link href="prettify.css" type="text/css" rel="stylesheet" />    
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+ 
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+  </head>
+
+  <body>
+      <div class="masthead">
+           <div class="navbar">
+                <div class="navbar-inner">
+                      <ul class="nav">
+                           <li style="vertical-align:middle;overflow:hidden"><a href="index.html"><img id="barlogo" src="assets/img/PayfoneLogo.png" style="width:80%;float:left;"></a></li>
+                           <li class="opp_hover_changer"><a href="index.html"><img src="assets/img/Home.png" style="max-width:80px"></a></li>
+                           <li class="opp_hover_changer"><a href="code.html" style="color:white"><img src="assets/img/CodeAlt.png" style="max-width:80px"></a></li>
+                           <li class="opp_hover_changer"><a href="user_flow.html" style="color:white"><img src="assets/img/UserFlow.png" style="max-width:90px"></a></li>
+                           <li class="opp_hover_changer"><a href="about.html" style="color:white"><img src="assets/img/About.png" style="max-width:80px"></a>
+                           </li>
+                      </ul>
+                </div>
+           </div><!-- /.navbar -->
+      </div>
+
+      <div style="width:100%"><img src="assets/img/code-top.png"></div>
+          <div style="background-color:white">
+          <div class="container">
+          <div class="pad25">
+	   <img src="assets/img/codesteps.png" style="border:none;display:block;margin: 0 auto;">
+          </div></div><br></div>
+
+  <div class="pad2">
+  <div class="container">
+    <div style="width:300px;max-width:47%;float:left;position:relative"><img src="assets/img/phone.png" style="width:75%;position:absolute;left:0;right:0;margin-left:auto;margin-right:auto;"><p style="position:absolute;margin-top:35%;color:white;text-align:center;left:0;right:0;margin-left:auto;margin-right:auto;">Number:</p>
+    <input id="someInput" value="" type="text" onkeydown="if (event.keyCode == 13) { getNumber(); return false; }" onfocus="this.value=''; this.onfocus=null;">
+    <input type="button" class="btn btn-custom" value="Submit" onClick="getNumber()" style="position:absolute;max-width:100px;padding-top:1em;padding-bottom:1em;left:0;right:0;margin-left:auto;margin-right:auto;margin-top:80%;">
+    <div class="clearfix"></div>
+    </div>
+    <div style="width:100%">
+      <div style="position:relative;width:46%;float:right;padding-right:3%;padding-top:40%">
+      <div id="from-note"><img id="right-arrow" src="assets/img/right-arrow-black.png"></img></div>
+         <div style="width:100%padding-bottom:1em;">
+            <h4 style="text-align:center">Terminal Code</h4><img src="assets/img/line2.png" style="border:none;display:block;margin: 0 auto;"><br>
+        </div>
+         <img src="assets/img/code terminal bg.png" style="zoom: 2;display: block;margin: auto;height: auto;max-height: 100%;width: auto;max-width: 100%;">
+         <div id="code_box" style="width:95%;border: 1px solid #d2deeb;border-top-color: #b9c7d7;background: #fff;padding: 10px;box-shadow: 0 0 10px #000;background-color:rgb(81,91,106);color:rgb(180,186,192)">
+            <p id="code_text"><span id="curl_before">&nbsp<br><br>&nbsp</span><span id="cURL" style="color:rgb(155,167,209)"></span><span id="curl_after"></span><span id="phone"></span></p>
+         </div>
+         <div style="width:100%;padding-top:1em;">
+           <center><input type="button" class="btn btn-custom" value="Send a Call" onClick="linxCall()" style="max-width:115px;padding-top:1em;padding-bottom:1em"></center>
+         </div>
+      <div style="width:52.631578947%;max-width:150px;float:left;padding-left:0%;padding-top:0.5em"><img id="left-arrow" src="assets/img/left-arrow-black.png"></img></div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+      <div style="width:46%;float:left;padding-left=3%">
+         <div style="width:100%">
+           <h4 style="text-align:center">Sample Output</h4><img src="assets/img/line2.png" style="border:none;display:block;margin: 0 auto;">
+         </div>
+         <div id="result"></div>
+         <p id="error-call"></p>
+         <div style="width:100%;padding-top:1em;">
+           <center><input id="copy-description" type="button" class="btn btn-custom" value="Copy" onClick="selectText('result');" style="max-width:75px;padding-top:1em;padding-bottom:1em"></center>
+         </div>
+      </div>
+  </div>
+  </div>
+
+     <div style="background-color:rgb(247,243,240)">
+      <div class="container">
+      <div class="pad5" style="text-align:center">
+        <br>
+        <h3>Start Testing Today</h3><img src="assets/img/line4.png" style="max-width:60%"><br><br>
+                           <p>1-Touch is simple to integrate and deploy within your app.<br>Request your developer credentials, login and begin testing today.<br><br></p>
+        <a class="btn btn-custom" href="mailto:sales-test@payfone.com?subject=1 Touch Developer Credentials" style="border:none;display:block;margin: 0 auto;max-width:180px;top:3em;padding-top:1em;padding-bottom:1em;">Request credentials</a>
+      
+      </div><br></div></div>
+
+      <div class="footer">
+      <div class="container">
+      <br><br>
+      <div style="width:5%;float:left">&nbsp;</div>
+      <div style="width:30%;float:left"><a href="about.html#contact" style="color:white;text-decoration:none;">Contact Us</a><br><br><a href="http://payfone.com/codex" style="color:white;text-decoration:none;">Login to Developer Portal</a></div>
+      <div style="width:30%;float:left;text-align:center">Social<br><br><a href="http://www.twitter.com/payfone"><img src="assets/img/icon_twitter.png"></a><a href="http://www.linkedin.com/company/payfone"><img src="assets/img/icon_in.png"></a><a href="http://vimeopro.com/user12603990/1touchcheckout"><img src="assets/img/icon_vimeo.png"></a><br><br><img src="assets/img/line.png"><br><br><div style="font-size:small;"><a href="http://payfone.com/privacy-policy/" style="color:rgb(255,100,0);text-decoration:none;font-size:small;">Privacy Policy</a> &copy; 2013 Payfone. All Rights Reserved.</div><br><img src="assets/img/minylogo_small.png"></div>
+      <div style="width:30%;float:left"><a href="https://www.pcisecuritystandards.org/"><img src="assets/img/pci.png" style="border:none;display:block;margin: 0 auto;"></a></div></div>
+      <br>
+      </div>
+      </div>
+
+    <!--1 Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+
+    <script src="assets/js/api.js"></script>
+
+    <script>
+        document.getElementById("result").innerHTML = "";
+        $("#result").append("<pre class="+ "\"" +"prettyprint"+ "\""+ ">" + "&nbsp<br><br>&nbsp" + "</pre>");
+        $.getScript("https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst");
+    </script>
+ 
+    <script>
+
+      function getNumber()
+      {
+        var nameElement = document.getElementById("someInput");
+        var num = nameElement.value;
+        num = num.match(/\d/g);
+        num = num.join('');
+        if (num.length == 10) {num = "1"+num;}
+        if (num.length == 11)
+        {
+          document.getElementById("right-arrow").src="assets/img/right-arrow-orange.png";
+          document.getElementById("cURL").innerHTML = "//1touchcheckout.com/test/php2js/linxauth.php";
+          document.getElementById("phone").innerHTML = num;
+          document.getElementById("curl_before").innerHTML = "curl http:";
+          document.getElementById("curl_after").innerHTML = "<br> -d msisdn=";
+	   $('#code_box').zclip({
+	  	path:'assets/flash/ZeroClipboard.swf',
+		copy:function(){return $('#code_text').text();}
+	                                 });
+
+        }
+        setTimeout("document.getElementById('right-arrow').src='assets/img/right-arrow-black.png';",1000);
+      }
+
+    </script>
+
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.zclip.js"></script>
+
+    <script>
+	function getIP() {
+	    var res="";
+	    if (window.XMLHttpRequest) xmlhttp = new XMLHttpRequest();
+	    else xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+	
+	    xmlhttp.open("GET","http://api.hostip.info/get_html.php",false);
+	    xmlhttp.send();
+	
+	   hostipInfo = xmlhttp.responseText.split("\n");
+	
+	    for (i=0; hostipInfo.length >= i; i++) {
+	        ipAddress = hostipInfo[i].split(":");
+	        if ( ipAddress[0] == "IP" ) {
+	         res=ipAddress[1];
+	         return res.trim();
+	        }
+	    }
+	    return res;
+	}
+    </script>
+
+    <script>
+      function linxCall()
+      {
+        document.getElementById("error-call").innerHTML = "";
+        var num = document.getElementById("phone").innerHTML;
+        if (num != "") {
+        var link = "msisdn="+num;
+        var sendURL=URL_LINX_AUTH+link;
+        $.ajax({
+            type:           'GET',
+            url:            sendURL,
+            async :         true,
+            dataType:       'JSONP', 
+            jsonpCallback:  "jsonpcallback",
+            success:        function(res){
+		      document.getElementById("left-arrow").src="assets/img/left-arrow-orange.png";
+                    if (JSON.parse(res).Response == "Day")
+                    {
+                    	   document.getElementById("error-call").innerHTML = "<p>That's a lot of numbers! You've reached the limit of 5 calls per day. You can try more tomorrow.</p>";
+                    }
+                    else if (JSON.parse(res).Response == "Min")
+                    {
+                    	   document.getElementById("error-call").innerHTML = "<p>Give it a rest. Limit to 1 call per minute.</p>";
+                    }
+                    else
+                    {
+			      document.getElementById("result").innerHTML = "";
+			      var code = JSON.parse(res).Response.StatusCode;
+			      if (code == 103)
+			      {
+			          document.getElementById("error-call").innerHTML = "<p>Something went wrong on our side.  Please try again.</p>";
+			      }
+			      else if (code == 110)
+			      {
+			          document.getElementById("error-call").innerHTML = "<p>Please re-enter your mobile number and try again.</p>";
+			      }
+			      else if (code == 112)
+			      {
+			          document.getElementById("error-call").innerHTML = "<p>Something is wrong with the number you entered.  Please re-enter your number and try again.</p>";
+			      }
+			      else if (code == 120)
+			      {
+			          document.getElementById("error-call").innerHTML = "<p>There was an error.  Please try again.</p>";
+			      }
+			      else if (code == 122)
+			      {
+			          document.getElementById("error-call").innerHTML = "<p>There was an error.  Please try again.</p>";
+			      }
+			      else if (code == 301)
+			      {
+			          document.getElementById("error-call").innerHTML = "<p>We couldn't find data for that number. Please try another number.</p>";
+			      }
+			      else if (code == 302)
+			      {
+			          document.getElementById("error-call").innerHTML = "<p>We don't yet have data for that mobile number provider. Please try another number.</p>";
+			      }
+			      var result = JSON.stringify(JSON.parse(res), undefined, 2);
+			      $("#result").append("<pre class="+ "\"" +"prettyprint"+ "\""+ ">" + result + "</pre>");
+			      $.getScript("https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst");
+			      $('#copy-description').zclip({
+			      		path:'assets/flash/ZeroClipboard.swf',
+			              copy:function(){return $('#result').text();}
+	                                                 });
+			      setTimeout("document.getElementById('left-arrow').src='assets/img/left-arrow-black.png';",1000);
+                    }
+	             eval(callback.replace("%1",res));
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+               eval(callback.replace("%1","ERROR "+thrownError));
+            }
+      });
+
+      var seconds = new Date().getTime() / 1000;
+      while ((res.length<=0) && ((new Date().getTime() / 1000) - seconds) < 5) ;
+         }
+      }
+
+    </script>
+
+    <script>
+
+    function selectText(containerid) {
+        if (document.selection) {
+            var range = document.body.createTextRange();
+            range.moveToElementText(document.getElementById(containerid));
+            range.select();
+        } else if (window.getSelection()) {
+            var range = document.createRange();
+            range.selectNode(document.getElementById(containerid));
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+        }
+    }
+
+    </script>
+
+  </body>
+  
+  <!--- CREDITS
+  http://thenounproject.com/noun/servers/#icon-No15885
+  
+  http://thenounproject.com/noun/code/#icon-No15003
+  
+  
+  
+  
+  ---->
+</html>

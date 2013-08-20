@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Payfone Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-responsive.css" />
+    <link rel="stylesheet" media="only screen and (min-width: 641px)" href="assets/css/custom.css" />
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 640px)" href="assets/css/custom2.css" />
+    <link rel="stylesheet" media="only screen and (min-width: 381px) and (max-width: 480px)" href="assets/css/custom3.css" />
+    <link rel="stylesheet" media="only screen and (max-width: 380px)" href="assets/css/custom4.css" />
+    <link rel="stylesheet" href="assets/css/investor.css" />
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+   <script type="text/javascript">
+window.onload = function () {
+	var styles = [
+		{featureType: "all",
+              stylers: [{ hue: "#FF7800" }]}
+	];
+	var options = {
+	mapTypeControlOptions: {
+		mapTypeIds: ['Styled']
+	},
+		center: new google.maps.LatLng(40.736789,-73.988673),
+		zoom: 14,
+		disableDefaultUI: false,	
+		mapTypeId: 'Styled'
+	};
+	var div = document.getElementById('surabaya');
+	var map = new google.maps.Map(div, options);
+	var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });
+	map.mapTypes.set('Styled', styledMapType);
+
+  var myLatlng = new google.maps.LatLng(40.736789,-73.988673);
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title:""
+  });
+};
+</script>
+   </head>
+
+  <body>
+
+      <div class="masthead">
+           <div class="navbar">
+                <div class="navbar-inner">
+                      <ul class="nav">
+                           <li style="vertical-align:middle;overflow:hidden"><a href="index.html"><img id="barlogo" src="assets/img/PayfoneLogo.png" style="width:80%;float:left;"></a></li>
+                           <li class="opp_hover_changer"><a href="index.html"><img src="assets/img/Home.png" style="max-width:80px"></a></li>
+                           <li class="opp_hover_changer"><a href="code.html" style="color:white"><img src="assets/img/Code.png" style="max-width:80px"></a></li>
+                           <li class="opp_hover_changer"><a href="user_flow.html" style="color:white"><img src="assets/img/UserFlow.png" style="max-width:90px"></a></li>
+                           <li class="opp_hover_changer"><a href="about.html" style="color:white"><img src="assets/img/AboutAlt.png" style="max-width:80px"></a>
+                           </li>
+                      </ul>
+                </div>
+           </div><!-- /.navbar -->
+      </div>
+ <!-- Main hero unit for a primary marketing message or call to action -->
+      <div style="background-color:rgb(225,85,18)">
+      <div class="pad4">
+      <div class="container">
+      <div id="company" class="full-height row-fluid" style="color:white;text-align:center">
+        <div class="width:94%;float:left">
+            <h3>Payfone is revolutionizing mCommerce by leveraging a consumer's mobile number to create the <nobr>1-Touch</nobr> Checkout&trade; process</h3>
+            <br>
+            <p>Payfone is the leading mobile commerce company that links mobile identity with the payment process to provide a near frictionless 
+            mobile commerce experience -- from check-in to check-out -- dramatically increasing conversion of mobile users to loyal mobile customers.</p>
+        </div><div class="clearfix"></div>
+      </div></div></div>
+      </div>
+
+      <div class="container">
+      <div class="pad7">
+      	  <h2 style="text-align:center">People</h2><img src="assets/img/line3.png" style="border:none;display:block;margin: 0 auto;"><br><br>
+
+	<div style="width:18%;float:left;text-align:center"><img src="assets/img/ceo.png" alt="" style="border:none;display:block;margin: 0 auto;"><h5>Rodger Desai</h5><h5>CEO / CO-FOUNDER</h5>
+        <a href="http://www.linkedin.com/in/rodgerdesai" target="_blank" class="linked_in" style="border:none;display:block;margin: 0 auto;"><img src="assets/img/icon_in_orange.png"></a></div>
+       <div style="width:4%;float:left">&nbsp;</div>
+        <div style="width:78%;float:left">
+            <p>Rodger is co-founder and Chief Executive Officer of Payfone, Inc. Rodger has been in the mobile industry for 15+ years. He co-founded and served as CEO of Rave Wireless and the Vettro corp., an early innovator in mobile banking and LBS apps.    </p>
+            <br>
+            <p>Rodger has also assisted in innitiatives that leverage the use of mobile phones in emerging markets for social causes, such as disease 
+            surveillance in Iraq, and micro-financed village phone programs in Asia.  </p>
+            <br>
+            <p>Rodger graduated from RPI and attended the Harvard Business School.</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="container">
+      <div class="pad7">
+	<div style="width:18%;float:left;text-align:center"><img src="assets/img/coo.png" alt="" style="border:none;display:block;margin: 0 auto;"><h5>Matthew Tucker</h5><h5>COO</h5>
+        <a href="http://www.linkedin.com/in/matthewjaytucker" target="_blank" class="linked_in" style="border:none;display:block;margin: 0 auto;"><img src="assets/img/icon_in_orange.png"></a></div>
+       <div style="width:4%;float:left">&nbsp;</div>
+        <div style="width:78%;float:left">
+            <p>Matthew Tucker is Chief Operating Officer at Payfone, Inc., and is chartered with driving the company's global expansion and mobile payments adoption worldwide. Matthew brings to Payfone significant background in leveraging global relationships to successfully build and scale growth-stage companies.</p>
+            <br>
+            <p>Matthew was on the founding management team of LendingTree, and previously served as head of business development at Smart System Technologies, a VC-funded start-up specializing in the commercialization of Near Field Communications technologies and related applications.</p>
+            <br>
+            <p>Matthew was most recently the President of Recyclebank, the Wall Street Journal's 2011 number four-ranked "Next Big Thing" venture-backed company. Recyclebank provides rewards to consumers who take environmental actions. Prior to Recyclebank, Matthew was President and CEO of Rely Software, a leading provider of cloud-based supply chain software.</p>
+            <br>
+            <p>Matthew received his Master of Business Administration from Georgetown University and received his undergraduate degree at the University of Michigan.</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="pad45">
+      <div class="container">
+	  <div id="investor" class="full-height row-fluid" style="text-align:center;">
+      	  <h2>Investors</h2><img src="assets/img/line3.png" style="border:none;display:block;margin: 0 auto;"><br><br>
+            <div style="margin-left:auto;margin-right:auto;">
+            <div style="max-width:25%;display:inline-block">
+              <a href="https://www.americanexpress.com/" target="_blank" class="photoframe" style="max-width:100%">
+              <img src="/assets/img/investor_amex1.gif" onmouseover="this.src='/assets/img/investor_amex2.gif'" onmouseout="this.src='/assets/img/investor_amex1.gif'" />
+              </a>
+            </div>
+            <div style="max-width:25%;display:inline-block">                
+              <a href="http://www.opuscapitalventures.com/" target="_blank" class="photoframe" style="max-width:100%">
+              <img src="/assets/img/investor_opus1.gif" onmouseover="this.src='/assets/img/investor_opus2.gif'" onmouseout="this.src='/assets/img/investor_opus1.gif'" />
+              </a>
+            </div>
+            <div style="max-width:25%;display:inline-block">                
+              <a href="http://www.rre.com/" target="_blank" class="photoframe" style="max-width:100%">
+              <img src="/assets/img/investor_rre1.gif" onmouseover="this.src='/assets/img/investor_rre2.gif'" onmouseout="this.src='/assets/img/investor_rre1.gif'" />
+              </a>
+            </div>
+            </div>
+            <div style="margin-left:auto;margin-right:auto;">            
+            <div style="max-width:25%;display:inline-block">                
+              <a href="http://relayventures.com/" target="_blank" class="photoframe" style="max-width:100%">
+              <img src="/assets/img/investor_relay1.gif" onmouseover="this.src='/assets/img/investor_relay2.gif'" onmouseout="this.src='/assets/img/investor_relay1.gif'" />
+              </a>
+            </div>
+            <div style="max-width:25%;display:inline-block">                
+              <a href="http://www.rogersventures.com/" target="_blank" class="photoframe" style="max-width:100%">
+              <img src="/assets/img/investor_rogers1.gif" onmouseover="this.src='/assets/img/investor_rogers2.gif'" onmouseout="this.src='/assets/img/investor_rogers1.gif'" />
+              </a>
+            </div>
+            <div style="max-width:25%;display:inline-block">                
+              <a href="http://www.verizonwireless.com/" target="_blank" class="photoframe" style="max-width:100%">
+              <img src="/assets/img/investor_verizon1.gif" onmouseover="this.src='/assets/img/investor_verizon2.gif'" onmouseout="this.src='/assets/img/investor_verizon1.gif'" />
+              </a>
+            </div>
+            </div>
+      </div>
+      </div>
+      </div>
+
+      <div class="pad6">
+      <div class="container">
+	  <div id="contact" class="full-height row-fluid">
+      	<center><h2>Contact</h2></center><img src="assets/img/line3.png" style="border:none;display:block;margin: 0 auto;"><br><br>
+            <div style="width:3%;float:left">&nbsp;</div>
+            <div style="width:42%;float:left">
+                <address id="add"><strong>Payfone HQ</strong><br />
+                    215 Park Avenue South, Suite 1101<br />
+                    New York NY 10003 USA<br />
+                </address>
+
+                <address id="add"><strong>Landline</strong><br />
+                    T+1 212.614.6927
+                </address>
+
+                <address id="add"><strong>Email</strong><br />
+                    <a href="mailto:info@payfone.com" >info@payfone.com</a>
+                </address>
+            </div>
+            <div style="width:52%;float:left">
+            	<!--<iframe src="http://www.map-generator.org/89e7af2f-eb13-431b-87a6-6f5f85440cb3/iframe-map.aspx" scrolling="no" height="400px" width="450px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>-->
+              <div id="surabaya" style="width:100%;padding-bottom:100%;"></div>  
+              <br><center><small><a href="http://www.map-generator.org/89e7af2f-eb13-431b-87a6-6f5f85440cb3/large-map.aspx" target="_blank">Open large map<a/></small></center>
+            </div>
+            <div style="width:3%;float:left">&nbsp;</div>
+            <div class="clearfix"></div></div>
+      </div>
+      </div>
+
+      <div id="backtotop">Back to Top</div>
+      <div class="footer">
+      <div class="container">
+      <br><br>
+      <div style="width:5%;float:left">&nbsp;</div>
+      <div style="width:30%;float:left"><a href="about.html#contact" style="color:white;text-decoration:none;">Contact Us</a><br><br><a href="http://payfone.com/codex" style="color:white;text-decoration:none;">Login to Developer Portal</a></div>
+      <div style="width:30%;float:left;text-align:center">Social<br><br><a href="http://www.twitter.com/payfone"><img src="assets/img/icon_twitter.png"></a><a href="http://www.linkedin.com/company/payfone"><img src="assets/img/icon_in.png"></a><a href="http://vimeopro.com/user12603990/1touchcheckout"><img src="assets/img/icon_vimeo.png"></a><br><br><img src="assets/img/line.png"><br><br><div style="font-size:small;"><a href="http://payfone.com/privacy-policy/" style="color:rgb(255,100,0);text-decoration:none;font-size:small;">Privacy Policy</a> &copy; 2013 Payfone. All Rights Reserved.</div><br><img src="assets/img/minylogo_small.png"></div>
+      <div style="width:30%;float:left"><a href="https://www.pcisecuritystandards.org/"><img src="assets/img/pci.png" style="border:none;display:block;margin: 0 auto;"></a></div></div>
+      <br>
+      </div>
+      </div>
+      </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    	$(function() {
+	$(window).scroll(function() {
+		if($(this).scrollTop() != 0) {
+			$('#backtotop').fadeIn();
+		} else {
+			$('#backtotop').fadeOut();
+		}
+	});
+
+	$('#backtotop').click(function() {
+		$('body,html').animate({scrollTop:0},800);
+	});
+});
+    </script>
+  </body>
+</html>
